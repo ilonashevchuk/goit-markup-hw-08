@@ -93,8 +93,8 @@ img {
 
 .container {
   width: 480px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -252,6 +252,7 @@ img {
   background-color: transparent;
   border: transparent;
   cursor: pointer;
+  z-index: 100;
 }
 
 @media screen and (min-width: 768px) {
@@ -266,16 +267,16 @@ img {
   }
 }
 
-.is-open .mobile-menu__button-menu {
+.mobile-menu__button .mobile-menu__button {
   display: none;
 }
 
-.mobile-menu__button-close {
-  display: none;
-}
-
-.is-open .mobile-menu__button-close {
+.mobile-menu__button.is-open .mobile-menu__button {
   display: block;
+}
+
+.mobile-menu__button.is-open .mobile-menu__button-menu {
+  display: none;
 }
 
 .hero__button {
@@ -414,6 +415,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   border: 1px solid transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-portfolio__button:hover, .section-portfolio__button:focus {
@@ -423,6 +425,17 @@ img {
 
 .section-portfolio__button:last-child {
   margin-right: 0;
+}
+
+.mobile-menu__button-icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--title-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__button-icon:hover, .mobile-menu__button-icon:focus {
+  fill: var(--accent-text-color);
 }
 
 .contacts-list__icon {
@@ -1762,7 +1775,8 @@ img {
     width: 100%;
     height: 796px;
     background-color: var(--bg-cl-cards);
-    transition: opacity 250ms linear, visibility 250ms linear;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
   }
   .mobile-menu.is-open {
     opacity: 1;
