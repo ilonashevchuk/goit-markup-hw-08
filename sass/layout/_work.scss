@@ -1,0 +1,33 @@
+.work {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    display: block;
+  }
+}
+
+.work__list {
+  display: inline-flex;
+}
+
+.work__list,
+.team__list {
+  /* .section-items, */
+  // .footer__list
+  padding: 0;
+}
+
+.work__item {
+  list-style: none;
+  min-width: 370px;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.work__thumb {
+  display: inline-block;
+  position: relative;
+}
