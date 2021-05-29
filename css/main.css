@@ -1255,6 +1255,12 @@ img {
   background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/header:img@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
@@ -1269,12 +1275,6 @@ img {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/header:img@2x.jpg);
   }
 }
 
