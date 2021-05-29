@@ -637,8 +637,8 @@ img {
 .footer__logo {
   width: 154px;
   height: 28px;
-  padding-left: 164px;
-  padding-right: 164px;
+  padding-left: 148px;
+  padding-right: 148px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -1125,7 +1125,7 @@ img {
 
 .socials-container {
   display: inline-block;
-  padding: 60px 137px;
+  padding: 60px 122px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1249,7 +1249,7 @@ img {
   padding: 118px 0 118px 0;
   height: 400px;
   background-color: var(--dark-bg-cl);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero1.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/header:img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1269,6 +1269,12 @@ img {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/header:img@2x.jpg);
   }
 }
 
@@ -1500,10 +1506,11 @@ img {
 }
 
 .clients__item {
+  width: 210px;
   display: flex;
   margin-top: 30px;
   margin-right: 30px;
-  flex-basis: calc((100% - 2 * 30px) / 2);
+  flex-basis: calc((100% - 60px) / 2);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1594,10 +1601,6 @@ img {
     padding-top: 11px;
     padding-left: 0;
   }
-}
-
-.address-container {
-  padding: 0px 124px;
 }
 
 @media screen and (min-width: 768px) {
