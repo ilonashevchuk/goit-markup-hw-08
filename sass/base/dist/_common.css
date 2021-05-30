@@ -6,11 +6,10 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
-  // outline: 1px solid rgba(144, 35, 158, 0.473);
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -60,16 +59,21 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
