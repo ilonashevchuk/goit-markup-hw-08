@@ -1,11 +1,16 @@
 .mobile-menu__button {
-  position: fixed;
-  right: 10px;
+  position: absolute;
   top: 10px;
+  right: 15px;
   background-color: transparent;
   border: transparent;
   cursor: pointer;
   z-index: 100;
+  @media screen and (max-width: 480px) {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -64,9 +69,9 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
-  margin: 20px 140px 0;
+  margin: 20px 120px 0;
   @media screen and (min-width: 768px) {
-    margin: 20px 140px 0;
+    margin: 20px 125px 0;
   }
   @media screen and (min-width: 1200px) {
     margin: 0;
