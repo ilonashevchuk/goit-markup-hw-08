@@ -4,16 +4,16 @@
 
 .nav-container {
   position: relative;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // width: 738px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
   }
-
-  @media screen and (min-width: 1200px) {
-    // width: 1200px;
-    // align-items: baseline;
+}
+@media screen and (min-width: 1200px) {
+  .nav-container {
     display: inline-flex;
     padding: 25px 0 25px 0;
   }
@@ -22,19 +22,22 @@
 .navigation {
   display: inline-flex;
   padding: 21px 0;
-  @media screen and (min-width: 1200px) {
+  /* justify-content: space-around; */
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
     padding: 0;
     display: inline-flex;
     align-items: center;
     margin-right: auto;
   }
-
-  /* justify-content: space-around; */
 }
 
 .nav-container__list {
   display: none;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .nav-container__list {
     display: inline-flex;
     padding-left: 0;
   }
@@ -42,35 +45,33 @@
 
 .nav-container__item {
   margin-right: 50px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  @media screen and (min-width: 768px) {
+}
+.nav-container__item:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .nav-container__item {
     width: px;
   }
-
-  @media screen and (min-width: 1200px) {
-    // width: 100%;
-  }
 }
-
-.contacts-list__item:not(:last-child) {
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .contacts-list__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .contacts-list {
   display: none;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .contacts-list {
     display: inline-flex;
     margin-left: 84px;
     flex-direction: column;
   }
-
-  @media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
     flex-direction: row;
     margin-left: 305px;
   }

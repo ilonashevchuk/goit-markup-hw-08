@@ -1206,7 +1206,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav-container {
-    width: 768px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -1724,13 +1723,14 @@ img {
 
 .section-portfolio__list {
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: inline-flex;
   flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .section-portfolio__list {
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
